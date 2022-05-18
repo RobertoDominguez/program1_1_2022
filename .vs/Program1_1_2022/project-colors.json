@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "186d089c-7959-4578-9bb0-144a604253ee": {
+      "ProjectGuid": "186d089c-7959-4578-9bb0-144a604253ee",
+      "DisplayName": "Program1_1_2022",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "b25f2b9e-6c3d-498f-8e3f-c31a859830fb": {
+      "ProjectGuid": "b25f2b9e-6c3d-498f-8e3f-c31a859830fb",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
