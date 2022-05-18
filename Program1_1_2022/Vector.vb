@@ -358,7 +358,7 @@
         Next
 
         For i = 1 To V1.Dimension
-            For j = i + 1 To Dimension()
+            For j = i + 1 To V1.Dimension
                 If (V1.obtenerItem(i) > V1.obtenerItem(j)) Then
                     Dim aux1 = V1.obtenerItem(i)
                     Dim aux2 = V2.obtenerItem(i)
