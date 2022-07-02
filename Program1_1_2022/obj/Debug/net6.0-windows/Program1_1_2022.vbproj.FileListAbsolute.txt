@@ -15,3 +15,4 @@ C:\Users\Roberto\Documents\Visual Studio 2022\Program1_1_2022\Program1_1_2022\ob
 C:\Users\Roberto\Documents\Visual Studio 2022\Program1_1_2022\Program1_1_2022\obj\Debug\net6.0-windows\ref\Program1_1_2022.dll
 C:\Users\Roberto\Documents\Visual Studio 2022\Program1_1_2022\Program1_1_2022\obj\Debug\net6.0-windows\Program1_1_2022.pdb
 C:\Users\Roberto\Documents\Visual Studio 2022\Program1_1_2022\Program1_1_2022\obj\Debug\net6.0-windows\Program1_1_2022.genruntimeconfig.cache
+C:\Users\Roberto\Documents\Visual Studio 2022\Program1_1_2022\Program1_1_2022\obj\Debug\net6.0-windows\Program1_1_2022.ArchivosForm.resources

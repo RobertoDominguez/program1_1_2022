@@ -45,7 +45,24 @@ Partial Class Form1
         Me.OrdenarMultiplosMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OrdenarMenorAMayorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IntercalarPrimosNoPrimosRangoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Examen1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MatricesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConstruirToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConstruirConDimensionToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CargarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DescargarStringToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DescargarStringGridToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CargarTextBoxToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OrdenarAscAbajoHaciaArribaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IntroducirElemenMayFrecToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcumularElemPrimosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OrdenarDiagonalSecundariaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ElementoMayorTriangularSecToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ElementosDiferentesColumnaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SegmentarEnParesDiagonalSecundariaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SegmentarEnParesTriangularSecundariaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OrdenarTriangularIzqDiagPrincToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MostrarElemParesPorColumnaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CadenaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConstruirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PonerCaracterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -61,7 +78,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Examen1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +86,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IntegerToolStripMenuItem, Me.VectoresToolStripMenuItem, Me.EjerciciosVectoresToolStripMenuItem, Me.MatricesToolStripMenuItem, Me.CadenaToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IntegerToolStripMenuItem, Me.VectoresToolStripMenuItem, Me.EjerciciosVectoresToolStripMenuItem, Me.MatricesToolStripMenuItem, Me.CadenaToolStripMenuItem, Me.ArchivoToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1711, 24)
@@ -210,11 +227,114 @@ Partial Class Form1
         Me.IntercalarPrimosNoPrimosRangoToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.IntercalarPrimosNoPrimosRangoToolStripMenuItem.Text = "intercalarPrimosNoPrimosRango"
         '
+        'Examen1ToolStripMenuItem
+        '
+        Me.Examen1ToolStripMenuItem.Name = "Examen1ToolStripMenuItem"
+        Me.Examen1ToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.Examen1ToolStripMenuItem.Text = "examen1"
+        '
         'MatricesToolStripMenuItem
         '
+        Me.MatricesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConstruirToolStripMenuItem2, Me.ConstruirConDimensionToolStripMenuItem1, Me.CargarToolStripMenuItem1, Me.DescargarStringToolStripMenuItem, Me.DescargarStringGridToolStripMenuItem1, Me.CargarTextBoxToolStripMenuItem1, Me.OrdenarAscAbajoHaciaArribaToolStripMenuItem, Me.IntroducirElemenMayFrecToolStripMenuItem, Me.AcumularElemPrimosToolStripMenuItem, Me.OrdenarDiagonalSecundariaToolStripMenuItem, Me.ElementoMayorTriangularSecToolStripMenuItem, Me.ElementosDiferentesColumnaToolStripMenuItem, Me.SegmentarEnParesDiagonalSecundariaToolStripMenuItem, Me.SegmentarEnParesTriangularSecundariaToolStripMenuItem1, Me.OrdenarTriangularIzqDiagPrincToolStripMenuItem, Me.MostrarElemParesPorColumnaToolStripMenuItem})
         Me.MatricesToolStripMenuItem.Name = "MatricesToolStripMenuItem"
         Me.MatricesToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
         Me.MatricesToolStripMenuItem.Text = "Matrices"
+        '
+        'ConstruirToolStripMenuItem2
+        '
+        Me.ConstruirToolStripMenuItem2.Name = "ConstruirToolStripMenuItem2"
+        Me.ConstruirToolStripMenuItem2.Size = New System.Drawing.Size(281, 22)
+        Me.ConstruirToolStripMenuItem2.Text = "Construir"
+        '
+        'ConstruirConDimensionToolStripMenuItem1
+        '
+        Me.ConstruirConDimensionToolStripMenuItem1.Name = "ConstruirConDimensionToolStripMenuItem1"
+        Me.ConstruirConDimensionToolStripMenuItem1.Size = New System.Drawing.Size(281, 22)
+        Me.ConstruirConDimensionToolStripMenuItem1.Text = "ConstruirConDimension"
+        '
+        'CargarToolStripMenuItem1
+        '
+        Me.CargarToolStripMenuItem1.Name = "CargarToolStripMenuItem1"
+        Me.CargarToolStripMenuItem1.Size = New System.Drawing.Size(281, 22)
+        Me.CargarToolStripMenuItem1.Text = "Cargar"
+        '
+        'DescargarStringToolStripMenuItem
+        '
+        Me.DescargarStringToolStripMenuItem.Name = "DescargarStringToolStripMenuItem"
+        Me.DescargarStringToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.DescargarStringToolStripMenuItem.Text = "DescargarString"
+        '
+        'DescargarStringGridToolStripMenuItem1
+        '
+        Me.DescargarStringGridToolStripMenuItem1.Name = "DescargarStringGridToolStripMenuItem1"
+        Me.DescargarStringGridToolStripMenuItem1.Size = New System.Drawing.Size(281, 22)
+        Me.DescargarStringGridToolStripMenuItem1.Text = "DescargarStringGrid"
+        '
+        'CargarTextBoxToolStripMenuItem1
+        '
+        Me.CargarTextBoxToolStripMenuItem1.Name = "CargarTextBoxToolStripMenuItem1"
+        Me.CargarTextBoxToolStripMenuItem1.Size = New System.Drawing.Size(281, 22)
+        Me.CargarTextBoxToolStripMenuItem1.Text = "CargarTextBox"
+        '
+        'OrdenarAscAbajoHaciaArribaToolStripMenuItem
+        '
+        Me.OrdenarAscAbajoHaciaArribaToolStripMenuItem.Name = "OrdenarAscAbajoHaciaArribaToolStripMenuItem"
+        Me.OrdenarAscAbajoHaciaArribaToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.OrdenarAscAbajoHaciaArribaToolStripMenuItem.Text = "OrdenarAscAbajoHaciaArriba"
+        '
+        'IntroducirElemenMayFrecToolStripMenuItem
+        '
+        Me.IntroducirElemenMayFrecToolStripMenuItem.Name = "IntroducirElemenMayFrecToolStripMenuItem"
+        Me.IntroducirElemenMayFrecToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.IntroducirElemenMayFrecToolStripMenuItem.Text = "introducirElemenMayFrec"
+        '
+        'AcumularElemPrimosToolStripMenuItem
+        '
+        Me.AcumularElemPrimosToolStripMenuItem.Name = "AcumularElemPrimosToolStripMenuItem"
+        Me.AcumularElemPrimosToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.AcumularElemPrimosToolStripMenuItem.Text = "acumularElemPrimos"
+        '
+        'OrdenarDiagonalSecundariaToolStripMenuItem
+        '
+        Me.OrdenarDiagonalSecundariaToolStripMenuItem.Name = "OrdenarDiagonalSecundariaToolStripMenuItem"
+        Me.OrdenarDiagonalSecundariaToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.OrdenarDiagonalSecundariaToolStripMenuItem.Text = "ordenarDiagonalSecundaria"
+        '
+        'ElementoMayorTriangularSecToolStripMenuItem
+        '
+        Me.ElementoMayorTriangularSecToolStripMenuItem.Name = "ElementoMayorTriangularSecToolStripMenuItem"
+        Me.ElementoMayorTriangularSecToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.ElementoMayorTriangularSecToolStripMenuItem.Text = "elementoMayorTriangularSec"
+        '
+        'ElementosDiferentesColumnaToolStripMenuItem
+        '
+        Me.ElementosDiferentesColumnaToolStripMenuItem.Name = "ElementosDiferentesColumnaToolStripMenuItem"
+        Me.ElementosDiferentesColumnaToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.ElementosDiferentesColumnaToolStripMenuItem.Text = "elementosDiferentesColumna"
+        '
+        'SegmentarEnParesDiagonalSecundariaToolStripMenuItem
+        '
+        Me.SegmentarEnParesDiagonalSecundariaToolStripMenuItem.Name = "SegmentarEnParesDiagonalSecundariaToolStripMenuItem"
+        Me.SegmentarEnParesDiagonalSecundariaToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.SegmentarEnParesDiagonalSecundariaToolStripMenuItem.Text = "segmentarEnParesDiagonalSecundaria"
+        '
+        'SegmentarEnParesTriangularSecundariaToolStripMenuItem1
+        '
+        Me.SegmentarEnParesTriangularSecundariaToolStripMenuItem1.Name = "SegmentarEnParesTriangularSecundariaToolStripMenuItem1"
+        Me.SegmentarEnParesTriangularSecundariaToolStripMenuItem1.Size = New System.Drawing.Size(281, 22)
+        Me.SegmentarEnParesTriangularSecundariaToolStripMenuItem1.Text = "segmentarEnParesTriangularSecundaria"
+        '
+        'OrdenarTriangularIzqDiagPrincToolStripMenuItem
+        '
+        Me.OrdenarTriangularIzqDiagPrincToolStripMenuItem.Name = "OrdenarTriangularIzqDiagPrincToolStripMenuItem"
+        Me.OrdenarTriangularIzqDiagPrincToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.OrdenarTriangularIzqDiagPrincToolStripMenuItem.Text = "ordenarTriangularIzqDiagPrinc"
+        '
+        'MostrarElemParesPorColumnaToolStripMenuItem
+        '
+        Me.MostrarElemParesPorColumnaToolStripMenuItem.Name = "MostrarElemParesPorColumnaToolStripMenuItem"
+        Me.MostrarElemParesPorColumnaToolStripMenuItem.Size = New System.Drawing.Size(281, 22)
+        Me.MostrarElemParesPorColumnaToolStripMenuItem.Text = "mostrarElemParesPorColumna"
         '
         'CadenaToolStripMenuItem
         '
@@ -226,25 +346,25 @@ Partial Class Form1
         'ConstruirToolStripMenuItem1
         '
         Me.ConstruirToolStripMenuItem1.Name = "ConstruirToolStripMenuItem1"
-        Me.ConstruirToolStripMenuItem1.Size = New System.Drawing.Size(177, 22)
+        Me.ConstruirToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ConstruirToolStripMenuItem1.Text = "Construir"
         '
         'PonerCaracterToolStripMenuItem
         '
         Me.PonerCaracterToolStripMenuItem.Name = "PonerCaracterToolStripMenuItem"
-        Me.PonerCaracterToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.PonerCaracterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PonerCaracterToolStripMenuItem.Text = "PonerCaracterChar"
         '
         'PonerCaracterASCIIToolStripMenuItem
         '
         Me.PonerCaracterASCIIToolStripMenuItem.Name = "PonerCaracterASCIIToolStripMenuItem"
-        Me.PonerCaracterASCIIToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.PonerCaracterASCIIToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PonerCaracterASCIIToolStripMenuItem.Text = "PonerCaracterASCII"
         '
         'ObtenerCadenaToolStripMenuItem
         '
         Me.ObtenerCadenaToolStripMenuItem.Name = "ObtenerCadenaToolStripMenuItem"
-        Me.ObtenerCadenaToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.ObtenerCadenaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ObtenerCadenaToolStripMenuItem.Text = "ObtenerCadena"
         '
         'DataGridView1
@@ -327,11 +447,11 @@ Partial Class Form1
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Valor"
         '
-        'Examen1ToolStripMenuItem
+        'ArchivoToolStripMenuItem
         '
-        Me.Examen1ToolStripMenuItem.Name = "Examen1ToolStripMenuItem"
-        Me.Examen1ToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
-        Me.Examen1ToolStripMenuItem.Text = "examen1"
+        Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'Form1
         '
@@ -401,4 +521,21 @@ Partial Class Form1
     Friend WithEvents ObtenerCadenaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PonerCaracterASCIIToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Examen1ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConstruirToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ConstruirConDimensionToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents CargarToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DescargarStringToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DescargarStringGridToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents CargarTextBoxToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents OrdenarAscAbajoHaciaArribaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IntroducirElemenMayFrecToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AcumularElemPrimosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OrdenarDiagonalSecundariaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ElementoMayorTriangularSecToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ElementosDiferentesColumnaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SegmentarEnParesDiagonalSecundariaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SegmentarEnParesTriangularSecundariaToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents OrdenarTriangularIzqDiagPrincToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MostrarElemParesPorColumnaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ArchivoToolStripMenuItem As ToolStripMenuItem
 End Class

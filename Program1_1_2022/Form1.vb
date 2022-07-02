@@ -2,7 +2,7 @@
 
     Dim v1, v2 As Vector
     Dim cad1 As Cadena
-
+    Dim m1, m2 As Matriz
     Private Sub ConstruirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConstruirToolStripMenuItem.Click
         v1 = New Vector()
         v2 = New Vector()
@@ -118,6 +118,79 @@
         TextBox1.Text = vs1.descargar()
         TextBox2.Text = vs2.descargar()
 
+    End Sub
+
+    Private Sub ConstruirConDimensionToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ConstruirConDimensionToolStripMenuItem1.Click
+        Dim cantidadFilas = TextBox3.Text
+        Dim cantidadColumnas = TextBox4.Text
+        m1 = New Matriz(cantidadFilas, cantidadColumnas, DataGridView1)
+    End Sub
+
+    Private Sub DescargarStringToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DescargarStringToolStripMenuItem.Click
+        TextBox1.Text = m1.comoString()
+    End Sub
+
+    Private Sub CargarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CargarToolStripMenuItem1.Click
+        m1.cargar(DataGridView1)
+    End Sub
+
+    Private Sub DescargarStringGridToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DescargarStringGridToolStripMenuItem1.Click
+        m1.descargar(DataGridView1)
+    End Sub
+
+    Private Sub CargarTextBoxToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CargarTextBoxToolStripMenuItem1.Click
+        m1.cargar(TextBox3.Text, TextBox4.Text, TextBox5.Text)
+    End Sub
+
+    Private Sub OrdenarAscAbajoHaciaArribaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenarAscAbajoHaciaArribaToolStripMenuItem.Click
+        m1.ordenarDeAbajoHaciaArribaAsc()
+    End Sub
+
+    Private Sub IntroducirElemenMayFrecToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IntroducirElemenMayFrecToolStripMenuItem.Click
+        m1.ordenarColumnaFinalFrecuencia()
+    End Sub
+
+    Private Sub AcumularElemPrimosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcumularElemPrimosToolStripMenuItem.Click
+        TextBox1.Text = m1.acumularPorElementosPrimos().ToString
+    End Sub
+
+    Private Sub OrdenarDiagonalSecundariaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenarDiagonalSecundariaToolStripMenuItem.Click
+        m1.ordenarDiagonalSecundariaMayorAMenor()
+    End Sub
+
+    Private Sub ElementoMayorTriangularSecToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ElementoMayorTriangularSecToolStripMenuItem.Click
+        m1.ordenarElementoMayorTriangularSecundaria()
+    End Sub
+
+    Private Sub ElementosDiferentesColumnaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ElementosDiferentesColumnaToolStripMenuItem.Click
+        m1.elementosDiferentesColumna()
+    End Sub
+
+    Private Sub SegmentarEnParesDiagonalSecundariaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SegmentarEnParesDiagonalSecundariaToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub SegmentarEnParesDiagonalSecundariaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SegmentarEnParesTriangularSecundariaToolStripMenuItem1.Click
+        m1.segmentarEnParesEImparesTriangularSecundaria()
+    End Sub
+
+    Private Sub OrdenarTriangularIzqDiagPrincToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenarTriangularIzqDiagPrincToolStripMenuItem.Click
+        m1.ordenarTriangularIzquierdaDiagPrincipal()
+    End Sub
+
+    Private Sub MostrarElemParesPorColumnaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MostrarElemParesPorColumnaToolStripMenuItem.Click
+        m1.mostrarElementosParesPorColumna()
+    End Sub
+
+    Private Sub ArchivoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArchivoToolStripMenuItem.Click
+        Dim f2 As New ArchivosForm
+        f2.Show()
+        'Me.Hide()
+    End Sub
+
+    Private Sub ConstruirToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ConstruirToolStripMenuItem2.Click
+        m1 = New Matriz()
+        m2 = New Matriz()
     End Sub
 
     Private Sub CargarPosTextBoxToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CargarPosTextBoxToolStripMenuItem.Click
